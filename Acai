@@ -1,0 +1,14 @@
+public class Acai implements Adicional {
+
+    @Override
+    public String getDescricao() {
+    return "Acai De Pobre";
+    }
+
+    @Override
+    public float custo() {
+     return 45;
+    }
+    
+    
+}
