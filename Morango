@@ -1,0 +1,21 @@
+public class Morango extends BaseDecorator{
+   
+    public Morango(Adicional adicao) {
+        super(adicao);
+    }
+    
+     public String getDescricao(){
+      return super.getDescricao() + "Morango";
+  }
+    
+  public float custo(){
+      return super.custo() + 9;
+  }
+  
+  
+   
+    
+    
+    
+    
+}
