@@ -1,0 +1,15 @@
+public class LeiteCondensado extends BaseDecorator {
+    
+    public LeiteCondensado(Adicional adicao) {
+        super(adicao);
+    }
+    
+      public String getDescricao(){
+      return super.getDescricao() + "Leite Condensado";
+  }
+    
+  public float custo(){
+      return super.custo() + 8;
+  }
+    
+}
