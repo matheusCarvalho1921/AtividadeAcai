@@ -1,0 +1,25 @@
+public class TesteDecorator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      
+    	
+    	Adicional acai = new Acai();
+    System.out.println(acai.getDescricao());
+    
+    Adicional morango = new Morango (acai);
+    System.out.println(morango.getDescricao());
+    	
+    Adicional leiteCondensado = new LeiteCondensado (morango);
+    System.out.println(leiteCondensado.getDescricao());
+    
+    
+    Adicional combo = new Banana (leiteCondensado);
+    System.out.println(combo.getDescricao() + combo.custo());
+    
+    
+    }
+    
+}
