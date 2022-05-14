@@ -1,0 +1,9 @@
+public interface Adicional {
+
+	String getDescricao();
+
+	float custo();
+	
+	
+
+}
