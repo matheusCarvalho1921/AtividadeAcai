@@ -1,0 +1,22 @@
+public class BaseDecorator implements Adicional {
+
+  private Adicional pacote;
+  
+  public BaseDecorator(Adicional adicao){
+      this.pacote = adicao;
+  }  
+
+  public String getDescricao(){
+      return pacote.getDescricao();
+  }
+    
+  public float custo(){
+      return pacote.custo();
+  }
+
+
+
+
+
+
+}
